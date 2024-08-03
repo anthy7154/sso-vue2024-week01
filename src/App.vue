@@ -75,9 +75,9 @@ const finishEdit = () => {
   </table>
 
   <p>滑鼠雙擊其一品項名稱，以編輯內容</p>
-  <hr>
-  <h2>編輯區域</h2>
   <div v-if="editable">
+    <hr>
+    <h2>編輯區域</h2>
     <input type="text" name="" id="" v-model="tempItem.name">
     <button type="button" v-on:click="finishEdit"
       v-bind:disabled="tempItem.name === menu[tempItem.id].name || tempItem.name === ''">確認</button>

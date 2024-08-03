@@ -5,6 +5,7 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/sso-vue2024-week01/',
   plugins: [
     vue(),
   ],
